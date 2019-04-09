@@ -16774,6 +16774,9 @@ spec:
             - --monitoring-port=15014
             - --self-signed-ca=true
             - --pkcs8-keys=true
+            - --workload-cert-ttl=3m
+            - --workload-cert-min-grace-period=1m
+            - --max-workload-cert-ttl=3m
           resources:
             requests:
               cpu: 10m
