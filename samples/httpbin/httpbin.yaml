@@ -42,8 +42,8 @@ spec:
         version: v1
     spec:
       containers:
-      - image: gcr.io/mgrpc-prototype-gke/proto1_istio_server:0.5
-        imagePullPolicy: IfNotPresent
+      - image: gcr.io/mgrpc-prototype-gke/proto1_istio_server:0.6
+        imagePullPolicy: Always
         name: httpbin
         ports:
         - containerPort: 54440
@@ -74,8 +74,8 @@ spec:
         version: v1
     spec:
       containers:
-      - image: gcr.io/mgrpc-prototype-gke/proto1_istio_client:0.5
-        imagePullPolicy: IfNotPresent
+      - image: gcr.io/mgrpc-prototype-gke/proto1_istio_client:0.6
+        imagePullPolicy: Always
         name: httpbin1
         ports:
         - containerPort: 443
